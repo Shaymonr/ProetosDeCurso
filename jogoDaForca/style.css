@@ -8,7 +8,7 @@
 .letra-quadrado {
   width: 60px;
   height: 60px;
-  border: 4px solid #ae00f3;
+  border: 4px solid #d3c3f3;
   font-size: 20pt;
   text-align: center;
   line-height: 50px;
@@ -36,4 +36,36 @@
   border-color: #c9b458;
   color: white;
 }
-    
+    #teclado-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.teclado-linha {
+  display: flex;
+  gap: 5px;
+}
+
+.tecla {
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tecla:hover {
+  background-color: #d3c3f3;
+}
+
+.tecla:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
