@@ -1,0 +1,39 @@
+.container {
+     background-color: #eee;
+  display: flex;
+  gap: 8px;
+  margin: 20px;
+}
+
+.letra-quadrado {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #ae00f3;
+  font-size: 20pt;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  user-select: none;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.acertou {
+  background-color: #6aaa64;
+  border-color: #6aaa64;
+  color: white;
+}
+
+.errou {
+  background-color: #787c7e;
+  border-color: #787c7e;
+  color: white;
+}
+
+.quase {
+  background-color: #c9b458;
+  border-color: #c9b458;
+  color: white;
+}
+    
