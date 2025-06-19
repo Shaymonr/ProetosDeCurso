@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nome = prompt('Seu nome: ')
+        document.write(`Seu nome tem ${nome.length} letras<br>`)
+        /* .toFixed(x) formata númmeros, com x casas decimais após a vírgula. Por padrão vem com ponto, mas
+        podemos utilizar .toFixed(x).replace('.',',') para trocar.
+        
+        .toLocaleString('pt-BR',{style: 'curency' , curency: 'BRL'}) Formata um número com estilo monetário de acordo com o país
+        Operador ternário:  'Teste'?'True':'False' - sem aspas, executa em teste e, sendo verdadeiro, toma o primeiro camino e sendo falso, toma o segundo caminho.
+        */
+        var num = Number(nome.length)
+        document.write( num % 2 == 0 ? 'par' : 'ímpar') //exemplo prátic do operador ternário.
+    </script>
+</body>
+
+</html>
